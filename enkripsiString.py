@@ -2,7 +2,7 @@ import urllib.request
 import json
 import requests
 
-text = input("Masukkan text yang ingin di enkripsi : ")
+text = input("Masukkan text yang ingin di enkripsi \t: ")
 
 dataEncrypt = {
     "text" : text
@@ -11,4 +11,4 @@ dataEncrypt = {
 jsonData = requests.post("http://sister.namekbuat.com/si7a/enkripsiString.php", data=dataEncrypt)
 
 data = json.loads(jsonData.text)
-print(data["text-encrypt"])
+print(f"Hasil dari enkripsi \t\t\t: {data['text-encrypt']}")
