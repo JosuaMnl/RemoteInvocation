@@ -8,7 +8,7 @@ dataEncrypt = {
     "text" : text
 }
 # jsonData = urllib.request.urlopen(f"http://localhost/RemoteInvocation/enkripsiString.php?text={text}")
-jsonData = requests.post("http://localhost/RemoteInvocation/enkripsiString.php", data=dataEncrypt)
+jsonData = requests.post("http://sister.namekbuat.com/si7a/enkripsiString.php", data=dataEncrypt)
 
 data = json.loads(jsonData.text)
 print(data["text-encrypt"])
