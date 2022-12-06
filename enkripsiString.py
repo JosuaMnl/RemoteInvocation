@@ -12,3 +12,4 @@ jsonData = requests.post("http://sister.namekbuat.com/si7a/enkripsiString.php", 
 
 data = json.loads(jsonData.text)
 print(f"Hasil dari enkripsi \t\t\t: {data['text-encrypt']}")
+print(data)

@@ -19,7 +19,7 @@ $encryption_iv = '1234567891011121';
 // Store the encryption key
 $encryption_key = "";
 
-if(!(isset($_POST['text']))) {
+if(!(isset($_POST['text'])) || $_POST['text'] == '') {
     $data = array(
         "status" => "error",
         "message" => "Silahkan Masukkan Text yang ingin di enkripsi terlebih dahulu!",
