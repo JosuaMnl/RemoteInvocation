@@ -8,7 +8,7 @@ header('Content-Type: application/json; charset=utf-8');
 
 // Store a string into the variable which
 // need to be Encrypted
-$simple_string = $_GET['text'];
+$simple_string = $_POST['text'];
 
 // Store the cipher method
 $ciphering = "AES-128-CTR";
